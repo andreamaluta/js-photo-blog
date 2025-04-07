@@ -7,8 +7,17 @@
 header{
     height: 120px;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body{
     background-color: cadetblue;
+}
+
+#title{
+    height: 50px;
+    width: 500px;
+    background-color: aqua;
 }
