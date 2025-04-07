@@ -68,6 +68,7 @@ main{
 /* classe che permette di dare il font alle date delle card */
 .date{
     font-family: "Sometype Mono", monospace;
+    color: rgb(175, 175, 175);
 }
 
 h3{
@@ -82,3 +83,6 @@ h3{
     top: -10px;
 }
 
+.upper{
+    text-transform: uppercase;
+}
