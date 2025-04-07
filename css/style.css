@@ -65,6 +65,7 @@ main{
     padding: 10px 20px;
 } 
 
+/* classe che permette di dare il font alle date delle card */
 .date{
     font-family: "Sometype Mono", monospace;
 }
@@ -73,6 +74,7 @@ h3{
     font-weight: 800;
 }
 
+/* classe che permette di posizionare il pin nella posizione desiderata */
 .pin{
     position: absolute;
     left: 50%;
