@@ -1,27 +1,38 @@
+/* selettore universale */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/* ---------------------------HEADER------------------------------ */
+
+/* stile dell'header */
 header{
+    background-image: url(../img/wall.png);
+    background-size: contain;
     height: 120px;
-    background-color: blue;
+    /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* -----------------------------BODY------------------------------ */
+
+/* stile del body */
 body{
     background-color: cadetblue;
 }
 
+/* stile del titolo della pagina */
 #title{
     height: 50px;
     width: 500px;
     background-color: aqua;
 }
 
+/* stile delle colonne e delle card che contengono immagine e descrizione */
 .col-4{
     /* height: 300px; */
     background-color: white;
