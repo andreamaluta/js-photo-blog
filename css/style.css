@@ -15,11 +15,24 @@ body{
 header{
     background-image: url(../img/wall.png);
     background-size: contain;
-    height: 120px;
+    /* height: 120px; */
     /* background-color: blue; */
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* stile del titolo della pagina */
+#title{
+    padding: 15px 0;
+    text-align: center;
+    /* height: 50px;
+    width: 500px; */
+    /* background-color: aqua; */
+}
+
+#title h1{
+    font-size: 65px;
 }
 
 /* -----------------------------BODY------------------------------ */
@@ -27,13 +40,6 @@ header{
 /* stile del body */
 main{
     background-color: cadetblue;
-}
-
-/* stile del titolo della pagina */
-#title{
-    height: 50px;
-    width: 500px;
-    background-color: aqua;
 }
 
 /* stile delle colonne e delle card che contengono immagine e descrizione */
