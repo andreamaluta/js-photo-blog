@@ -1,9 +1,8 @@
 // recupero gli elementi del dom
 const button = document.querySelector('.btn')
 const overlay = document.getElementById('overlay')
-// const image = document.querySelectorAll('.img');
-// const date = document.querySelectorAll('.date');
-// const cardTitle = document.querySelectorAll('.description');
+const image = document.getElementById('imgOver')
+
 
 
 
@@ -47,8 +46,9 @@ const updContainer = (arrayCard) =>{
 axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp)=>{
     // estraggo l'array tramite resp.data e lo inserisco in una variabile
     const array = resp.data;    
-    console.log(array);
-    
+    // console.log(array);
+     
+
     // chiamo la funzione per creare le card passando l'array appena costruito
     updContainer(array);
 
@@ -61,6 +61,14 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp)=>{
         card.addEventListener('click', () => {
             // tolgo la classe d-none una volta cliccato sulla card
             overlay.classList.remove('d-none');
+            // ciclo l'array estratto in precedenza
+            for(let i=0; i<array.length; i++){
+                // controllo se l'inner html della card che ho cliccato contiene l'url dell'elemento che sto visualizzando dell'array
+                if(card.innerHTML.includes(array[i].url)){
+                    // se lo contiene lo cambio nel dom
+                    image.src = array[i].url;
+                }
+            }
         });
     })
     
