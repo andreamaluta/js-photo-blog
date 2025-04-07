@@ -21,3 +21,26 @@ body{
     width: 500px;
     background-color: aqua;
 }
+
+.col-4{
+    /* height: 300px; */
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.card{
+    background-color: brown;
+    /* height: 250px; */
+}
+
+.card .img{
+    height: 200px;
+    width: 75%;
+    background-color: aqua;
+}
+
+.card .content{
+    background-color: blueviolet;
+    height: 100px;
+}
