@@ -31,7 +31,13 @@ const cardTitle = document.querySelectorAll('.description');
         return card;            
     }
 
+    const updContainer = (arrayCard) =>{
+        for(let i=0; i<arrayCard.length; i++){
+          let pippo = createdCard(arrayCard[i]);
+          document.querySelector('.row').innerHTML += pippo;
+        }
+    }
+
    
-    
 
 
