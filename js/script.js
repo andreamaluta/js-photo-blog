@@ -10,7 +10,7 @@
     const createdCard = (objArray) => {
 
         // creo la stringa che mi contiene l'html che poi linkero alla row
-        let card = `<div class="col-4">
+        let card = `<div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="card">
                        
                         <div class="pin">
