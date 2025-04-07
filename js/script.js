@@ -52,18 +52,23 @@ axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp)=>{
     // chiamo la funzione per creare le card passando l'array appena costruito
     updContainer(array);
 
-
+    // prendo dentro la chiamata ajax gli elementi card del dom dal momento che fuori dalla chiamata gli elementi non sono ancora creati
     const cards = document.querySelectorAll('.card');
 
+    // ciclo le card
     cards.forEach(card => {
+        // ad ogni card aggiungo l'evento click
         card.addEventListener('click', () => {
+            // tolgo la classe d-none una volta cliccato sulla card
             overlay.classList.remove('d-none');
         });
     })
     
 })
 
+// aggiungo un evento click al bottone che mi permette di nascondere di nuovo l'overlay
 button.addEventListener('click', () => {
+    // aggiungo di nuovo la classe d-none una volta che clicco sul bottone
     overlay.classList.add('d-none');
 })
 
