@@ -59,6 +59,7 @@ main{
 }
 
 .card .content{
-    background-color: blueviolet;
-    height: 100px;
-}
+    /* background-color: blueviolet;
+    height: 100px; */
+    padding: 10px 20px;
+} 
