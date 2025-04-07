@@ -38,6 +38,13 @@ const cardTitle = document.querySelectorAll('.description');
         }
     }
 
-   
+    axios.get('https://lanciweb.github.io/demo/api/pictures/').then((resp)=>{
+        const array = resp.data;    
+        console.log(array);
+        
+        updContainer(array);
+        
+    })
+    
 
 
