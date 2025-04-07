@@ -91,17 +91,16 @@ h3{
 
 /* -------------------------OVERLAY------------------------- */
 
-.overlay{
+#overlay{
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     z-index: 1;
     text-align: center;
-    display: none;
 }
 
-.overlay img{
+#overlay img{
     width: 40%;
     position: absolute;
     top: 50%;
@@ -109,7 +108,9 @@ h3{
     transform: translate(-50%, -50%);
 }
 
-.overlay .btn{
+#overlay .btn{
     margin-top: 20px;
     font-size: 20px;
 }
+
+
