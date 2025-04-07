@@ -47,20 +47,15 @@ main{
 /* stile delle colonne e delle card che contengono immagine e descrizione */
 .col-4{
     /* height: 300px; */
-    background-color: white;
-    border: 1px solid black;
+    /*background-color: white;
+    border: 1px solid black; */
     padding: 10px;
 }
 
 .card{
-    background-color: brown;
+    background-color: white;
+    border-radius: 0px;
     /* height: 250px; */
-}
-
-.card .img{
-    height: 200px;
-    width: 75%;
-    background-color: aqua;
 }
 
 .card .content{
