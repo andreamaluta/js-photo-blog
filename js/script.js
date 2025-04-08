@@ -37,8 +37,8 @@ const createdCard = (objArray) => {
 // funzione che mi permette di ciclare l'array e linkare le card alla row
 const updContainer = (arrayCard) =>{
     for(let i=0; i<arrayCard.length; i++){
-        let pippo = createdCard(arrayCard[i]);
-        document.querySelector('.row').innerHTML += pippo;
+        let create = createdCard(arrayCard[i]);
+        document.querySelector('.row').innerHTML += create;
     }
 }
 
